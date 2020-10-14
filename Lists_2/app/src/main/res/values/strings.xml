@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Списки</string>
+    <string name="cat_text">Котика</string>
+    <string name="dog_text">Собачку</string>
+    <string name="choose_text">Выберите питомца</string>
+    <string name="add_button_template_item">Добавить</string>
+    <string name="mas_cat">кг.</string>
+    <string name="cat_text_mas">Вес:</string>
+    <string name="poroda">Породистая</string>
+    <string name="poroda_dvor">Дворняга</string>
+</resources>

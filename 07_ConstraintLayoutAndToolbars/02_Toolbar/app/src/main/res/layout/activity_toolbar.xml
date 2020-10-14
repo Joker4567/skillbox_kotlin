@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:theme="@style/ToolbarTheme"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:menu="@menu/menu_toolbar"
+            app:navigationIcon="@drawable/ic_arrow_back"
+            app:popupTheme="@style/ToolbarPopupOverlay"
+            app:title="Toolbar title" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <TextView
+            android:id="@+id/textQuery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Benefits of using the Paging library
+            The Paging library includes the following features:
+            In-memory caching for your paged data. This ensures that your app uses system resources efficiently while working with paged data.
+            Built-in request deduplication, ensuring that your app uses network bandwidth and system resources efficiently.
+            Configurable RecyclerView adapters that automatically request data as the user scrolls toward the end of the loaded data.
+            First-class support for Kotlin coroutines and Flow, as well as LiveData and RxJava.
+            Built-in support for error handling, including refresh and retry capabilities.\nNew in Alpha
+            Hilt — Jetpack’s recommended library for Dependency Injection
+            Hilt is a new Android library which simplifies dependency injection (DI) in your application. Hilt lets you focus on just the important parts of defining and injecting bindings without worrying about managing all of the DI setup and wiring.
+            Built on top of Dagger, Hilt benefits from it’s compile-time correctness, improved runtime performance, and scalability. Hilt adds integration with Jetpack libraries and Android framework classes.
+            \nFind out more about Hilt and discover more links to related resources in our launch blog post.
+            Paging 3 — load and display data incrementally
+            Paging is a library that helps you load and display small chunks of data incrementally. Today we’re releasing Paging 3 — a complete rewrite of the library using Kotlin coroutines. This new release adds highly requested features like separators, headers, footers and list transformations and APIs for observing list loading state and methods for retry and refresh."
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5" />
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

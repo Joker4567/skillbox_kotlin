@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_navigation"
+    app:startDestination="@id/petsFragmentList"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/emptyPetsFragment"
+        android:name="com.skillbox.lists12.Fragment.EmptyListFragment"
+        android:label="Pets"
+        tools:layout="@layout/fragment_empty_list"/>
+    <fragment
+        android:id="@+id/petsFragmentList"
+        android:name="com.skillbox.lists12.Fragment.PetListFragment"
+        android:label="Pets"
+        tools:layout="@layout/fragment_user_list">
+        <action
+            android:id="@+id/action_petsFragmentList_to_dialogFragment"
+            app:destination="@id/dialogFragment"/>
+        <action
+            android:id="@+id/action_petsFragmentList_to_emptyPetsFragment"
+            app:destination="@id/emptyPetsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dialogFragment"
+        android:name="com.skillbox.lists12.Fragment.DialogFragment"
+        android:label="Choose pet"
+        tools:layout="@layout/fragment_dialog_choose">
+        <action
+            android:id="@+id/action_dialogFragment_to_templateFragment"
+            app:destination="@id/templateFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/templateFragment"
+        android:name="com.skillbox.lists12.Fragment.TemplateItemFragment"
+        android:label="Add pet"
+        tools:layout="@layout/fragment_template_object_add">
+        <action
+            android:id="@+id/action_templateFragment_to_petsFragmentList"
+            app:destination="@id/petsFragmentList"/>
+    </fragment>
+    <fragment
+        android:id="@+id/imageFragmentList"
+        android:name="com.skillbox.lists12.Fragment.ImageListFragment"
+        android:label="Image"
+        tools:layout="@layout/fragment_image_list">
+    </fragment>
+</navigation>

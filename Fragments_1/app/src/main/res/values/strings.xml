@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">10_Fragment</string>
+    <string name="auth">Авторизация</string>
+    <string name="email_textView">Почта</string>
+    <string name="password_textView">Пароль</string>
+    <string name="extract_TextView">Я принимаю условия Пользовательского соглашения</string>
+    <string name="authButton">Войти</string>
+    <string name="process_TextView">Процесс авторизации</string>
+    <string name="writePassWord_EditTextHint">Введите пароль</string>
+    <string name="writeEmailHintTextView">Введите email адрес</string>
+    <string name="ANR">ANR</string>
+</resources>

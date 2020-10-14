@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.skillbox.multithreading.MainFragment"
+        tools:layout="@layout/fragment_main"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_deadlockFragment"
+            app:destination="@id/deadlockFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_livelockFragment"
+            app:destination="@id/livelockFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_raceConditionFragment"
+            app:destination="@id/raceConditionFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_threadingFragment"
+            app:destination="@id/threadingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/deadlockFragment"
+        android:name="com.skillbox.multithreading.DeadlockFragment"
+        android:label="DeadlockFragment" />
+    <fragment
+        android:id="@+id/livelockFragment"
+        android:name="com.skillbox.multithreading.LivelockFragment"
+        android:label="LivelockFragment" />
+    <fragment
+        android:id="@+id/raceConditionFragment"
+        android:name="com.skillbox.multithreading.RaceConditionFragment"
+        android:label="RaceConditionFragment" />
+    <fragment
+        android:id="@+id/threadingFragment"
+        tools:layout="@layout/fragment_threading"
+        android:name="com.skillbox.multithreading.threading.ThreadingFragment"
+        android:label="ThreadingFragment" />
+</navigation>

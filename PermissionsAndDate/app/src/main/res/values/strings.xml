@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">DateTimePermission</string>
+    <string name="getLocationButton">Получить локацию</string>
+    <string name="enter_the_message">Введите сообщение</string>
+    <string name="permissionDeniedButton">Разрешить</string>
+</resources>
