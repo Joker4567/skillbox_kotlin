@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Networking</string>
+    <string name="search_hint">Введите название фильма</string>
+    <string name="search">Искать</string>
+    <string name="year_movies">Введите год выхода</string>
+    <string name="revert_get_api">Повторить запрос</string>
+    <string name="rating_add">Добавить оценку</string>
+    <string-array name="type_movies">
+        <item>all</item>
+        <item>episode</item>
+        <item>movie</item>
+        <item>series</item>
+    </string-array>
+</resources>

@@ -1,0 +1,28 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Styles to be used for the exposed dropdown menu. -->
+    <style name="Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu">
+        <item name="materialThemeOverlay">
+            @style/ThemeOverlay.MaterialComponents.AutoCompleteTextView.FilledBox
+        </item>
+        <item name="endIconMode">dropdown_menu</item>
+    </style>
+
+
+    <style name="Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu">
+
+        <item name="materialThemeOverlay">
+
+            @style/ThemeOverlay.MaterialComponents.AutoCompleteTextView.FilledBox.Dense
+        </item>
+        <item name="endIconMode">dropdown_menu</item>
+    </style>
+
+</resources>
