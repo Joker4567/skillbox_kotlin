@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/menuFragment"
+        tools:layout="@layout/fragment_menu"
+        android:name="com.skillbox.files.MenuFragment"
+        android:label="MenuFragment" >
+        <action
+            android:id="@+id/action_menuFragment_to_assetFilesFragment"
+            app:destination="@id/assetFilesFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_internalStorageFragment"
+            app:destination="@id/internalStorageFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_externalStorageFragment"
+            app:destination="@id/externalStorageFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_sharedPreferencesFragment"
+            app:destination="@id/sharedPreferencesFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_datastoreFragment"
+            app:destination="@id/datastoreFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_homeWorkFragment"
+            app:destination="@id/homeWorkFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/assetFilesFragment"
+        tools:layout="@layout/fragment_assets"
+        android:name="com.skillbox.files.AssetFilesFragment"
+        android:label="AssetFilesFragment" />
+    <fragment
+        android:id="@+id/internalStorageFragment"
+        android:name="com.skillbox.files.InternalStorageFragment"
+        android:label="InternalStorageFragment" />
+    <fragment
+        android:id="@+id/externalStorageFragment"
+        android:name="com.skillbox.files.ExternalStorageFragment"
+        android:label="ExternalStorageFragment" />
+    <fragment
+        android:id="@+id/sharedPreferencesFragment"
+        android:name="com.skillbox.files.SharedPreferencesFragment"
+        android:label="SharedPreferencesFragment" />
+    <fragment
+        android:id="@+id/datastoreFragment"
+        android:name="com.skillbox.files.datastore.DatastoreFragment"
+        android:label="DatastoreFragment" />
+    <fragment
+        android:id="@+id/homeWorkFragment"
+        android:name="com.skillbox.files.homework.HomeworkFragment"
+        android:label="HomeWorkFragment" />
+</navigation>

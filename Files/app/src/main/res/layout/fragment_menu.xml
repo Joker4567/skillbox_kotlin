@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/assetFiles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Asset files" />
+
+    <Button
+        android:id="@+id/internalStorage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Internal storage" />
+
+    <Button
+        android:id="@+id/externalStorage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="External storage" />
+
+    <Button
+        android:id="@+id/sharedPreferences"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shared preferences" />
+
+    <Button
+        android:id="@+id/datastore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data store" />
+
+    <Button
+        android:id="@+id/homeWork"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Home work" />
+
+</LinearLayout>

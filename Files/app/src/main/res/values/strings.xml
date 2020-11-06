@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Files</string>
+    <string name="download">download</string>
+    <string name="sample_url">https://github.com/Kotlin/kotlinx.coroutines/raw/master/README.md</string>
+</resources>

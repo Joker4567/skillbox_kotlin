@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Github</string>
+    <string name="main_profile">Профиль</string>
+    <string name="main_repositories">Список репозиториев</string>
+    <string name="auth_login">Войти</string>
+    <string name="auth_canceled">Аутентификация не выполнена</string>
+    <string name="user_login">Login</string>
+    <string name="user_id">ID</string>
+    <string name="user_email">E-Mail</string>
+    <string name="user_public_repos">Публичных репозиториев</string>
+    <string name="owner_avatar">Owner Avatar</string>
+    <string name="repo_name">Имя репозитория</string>
+    <string name="repo_full_name">Полное название</string>
+    <string name="repo_id">ID репозитория</string>
+    <string name="repo_description">Описание</string>
+    <string name="repo_ssh_url">SSH URL</string>
+    <string name="repo_html_url">HTML URL</string>
+    <string name="user_avatar">User Avatar</string>
+    <string name="name">Имя</string>
+    <string name="company">Компания</string>
+    <string name="city">Город</string>
+    <string name="hireable">В поиске работы</string>
+    <string name="edit">Edit</string>
+    <string name="save">Save</string>
+    <string name="repo_created">Создан</string>
+    <string name="profile">Профиль</string>
+    <string name="public_repos_list">Публичные репозитории</string>
+    <string name="current_repo">Информация по репозиторию</string>
+    <string name="star">Star</string>
+    <string name="ok">ОК</string>
+    <string name="error_internet_connection">Ошибка доступа к Internet. Попробуйте позже.</string>
+    <string name="wrong_server_response">Ошибка в ответе сервера</string>
+    <string-array name="hireable_types_array">
+        <item>Да</item>
+        <item>Нет</item>
+    </string-array>
+
+</resources>
