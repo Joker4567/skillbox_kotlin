@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        tools:layout="@layout/fragment_main"
+        android:id="@+id/mainFragment"
+        android:name="com.example.contentprovider.UI.Fragment.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_addFragment"
+            app:destination="@id/addFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_loadFragment"
+            app:destination="@id/loadFragment" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_detail"
+        android:id="@+id/addFragment"
+        android:name="com.example.contentprovider.UI.Fragment.AddFragment"
+        android:label="AddFragment" />
+    <fragment
+        tools:layout="@layout/fragment_add"
+        android:id="@+id/detailFragment"
+        android:name="com.example.contentprovider.UI.Fragment.DetailFragment"
+        android:label="DetailFragment" >
+        <argument
+            android:name="contact"
+            app:argType="com.example.contentprovider.Data.Contact" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_load"
+        android:id="@+id/loadFragment"
+        android:name="com.example.contentprovider.UI.Fragment.LoadFragment"
+        android:label="LoadFragment" />
+</navigation>

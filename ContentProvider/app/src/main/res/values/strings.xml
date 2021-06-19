@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ContentProvider</string>
+    <string name="enterName">Введите имя...</string>
+    <string name="enterPhoneNumber">Введите номер телефона...</string>
+    <string name="enterEmail">Введите почту...</string>
+    <string name="save">Сохранить</string>
+    <string name="Enter_file_link">Введите ссылку на файл...</string>
+    <string name="download">Загрузить файл</string>
+    <string name="sendFile">Отправить файл</string>
+</resources>
