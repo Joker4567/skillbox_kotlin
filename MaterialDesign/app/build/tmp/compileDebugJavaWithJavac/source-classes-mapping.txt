@@ -1,0 +1,12 @@
+pro/enaza/materialdesign/databinding/FragmentHomeBinding.java
+ pro.enaza.materialdesign.databinding.FragmentHomeBinding
+pro/enaza/materialdesign/BuildConfig.java
+ pro.enaza.materialdesign.BuildConfig
+pro/enaza/materialdesign/databinding/FragmentNotificationsBinding.java
+ pro.enaza.materialdesign.databinding.FragmentNotificationsBinding
+pro/enaza/materialdesign/databinding/ItemCardBinding.java
+ pro.enaza.materialdesign.databinding.ItemCardBinding
+pro/enaza/materialdesign/databinding/ActivityMainBinding.java
+ pro.enaza.materialdesign.databinding.ActivityMainBinding
+pro/enaza/materialdesign/databinding/FragmentDashboardBinding.java
+ pro.enaza.materialdesign.databinding.FragmentDashboardBinding
