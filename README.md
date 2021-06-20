@@ -21,3 +21,11 @@
 * Работа с файлами
 * Базы данных в Android
 * ContentProvider
+* Базы данных в Android
+* Оповещения
+* Scoped storage
+* Flow
+* Выполнение задач в фоне
+* Material design
+* Dependency injection (Dagger Hilt)
+* Подготовка приложения к релизу
