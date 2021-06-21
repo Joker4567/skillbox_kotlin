@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    app:startDestination="@id/imagesFragment">
+
+    <fragment
+        android:id="@+id/imagesFragment"
+        android:name="ru.skillbox.dependency_injection.presentation.images.list.ImagesFragment"
+        android:label="ImagesFragment" >
+        <action
+            android:id="@+id/action_imagesFragment_to_addImageDialogFragment"
+            app:destination="@id/addImageDialogFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/addImageDialogFragment"
+        android:name="ru.skillbox.dependency_injection.presentation.images.add.AddImageDialogFragment"
+        android:label="AddImageDialogFragment" />
+</navigation>

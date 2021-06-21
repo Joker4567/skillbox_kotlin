@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">DependencyInjection</string>
+    <string name="image_list_error">Load list error</string>
+    <string name="image_list_delete_error">Image delete error</string>
+    <string name="image_list_grant_permission">Grant permission</string>
+
+    <string name="image_add_title">Add image</string>
+    <string name="image_add_name_hint">Image name</string>
+    <string name="image_add_url_hint">Jpeg image URL</string>
+    <string name="image_add_button">Save</string>
+    <string name="image_add_error">Image save error</string>
+    <string name="docs_read_file">Read file</string>
+    <string name="docs_create_file">Create file</string>
+    <string name="docs_select_directory">Select directory</string>
+</resources>
