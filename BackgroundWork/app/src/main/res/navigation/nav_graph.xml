@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="ru.skillbox.services.fragment.MenuFragment"
+        android:label="MenuFragment" >
+        <action
+            android:id="@+id/action_menuFragment_to_startedServiceFragment"
+            app:destination="@id/startedServiceFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_workManagerFragment"
+            app:destination="@id/workManagerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/startedServiceFragment"
+        android:name="ru.skillbox.services.fragment.StartedServiceFragment"
+        android:label="StartedServiceFragment" />
+    <fragment
+        android:id="@+id/workManagerFragment"
+        android:name="ru.skillbox.services.fragment.WorkManagerFragment"
+        android:label="WorkManagerFragment" />
+</navigation>

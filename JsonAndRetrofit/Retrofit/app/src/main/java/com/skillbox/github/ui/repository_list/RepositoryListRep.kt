@@ -50,9 +50,90 @@ class RepositoryListRep {
                     response: Response<Boolean>
                 ) {
                     if(response.isSuccessful) {
-                        onComplete(response.body()!!)
+                        if(response.code() == 204)
+                            onComplete(true)
+                        else
+                            onComplete(false)
                     } else {
-                        onError(RuntimeException("incorrect status code"))
+                        when {
+                            response.code() == 404 -> onComplete(false)
+                            response.code() == 403 -> onError(RuntimeException("Forbidden"))
+                            response.code() == 401 -> onError(RuntimeException("Requires authentication"))
+                            response.code() == 304 -> onError(RuntimeException("Not modified"))
+                            else -> onError(RuntimeException("incorrect status code"))
+                        }
+                    }
+                }
+            }
+        )
+    }
+
+    fun putStarred(
+        owner_path:String,
+        repo_path:String,
+        onComplete: (Boolean) -> Unit,
+        onError: (Throwable) -> Unit
+    ) {
+        Networking.githubApi.putStarred(owner_path, repo_path).enqueue(
+            object : Callback<Boolean> {
+
+                override fun onFailure(call: Call<Boolean>, t: Throwable) {
+                    onError(t)
+                }
+
+                override fun onResponse(
+                    call: Call<Boolean>,
+                    response: Response<Boolean>
+                ) {
+                    if(response.isSuccessful) {
+                        if(response.code() == 204)
+                            onComplete(true)
+                        else
+                            onComplete(false)
+                    } else {
+                        when {
+                            response.code() == 404 -> onComplete(false)
+                            response.code() == 403 -> onError(RuntimeException("Forbidden"))
+                            response.code() == 401 -> onError(RuntimeException("Requires authentication"))
+                            response.code() == 304 -> onError(RuntimeException("Not modified"))
+                            else -> onError(RuntimeException("incorrect status code"))
+                        }
+                    }
+                }
+            }
+        )
+    }
+
+    fun deleteStarred(
+        owner_path:String,
+        repo_path:String,
+        onComplete: (Boolean) -> Unit,
+        onError: (Throwable) -> Unit
+    ) {
+        Networking.githubApi.deleteStarred(owner_path, repo_path).enqueue(
+            object : Callback<Boolean> {
+
+                override fun onFailure(call: Call<Boolean>, t: Throwable) {
+                    onError(t)
+                }
+
+                override fun onResponse(
+                    call: Call<Boolean>,
+                    response: Response<Boolean>
+                ) {
+                    if(response.isSuccessful) {
+                        if(response.code() == 204)
+                            onComplete(true)
+                        else
+                            onComplete(false)
+                    } else {
+                        when {
+                            response.code() == 404 -> onComplete(false)
+                            response.code() == 403 -> onError(RuntimeException("Forbidden"))
+                            response.code() == 401 -> onError(RuntimeException("Requires authentication"))
+                            response.code() == 304 -> onError(RuntimeException("Not modified"))
+                            else -> onError(RuntimeException("incorrect status code"))
+                        }
                     }
                 }
             }

@@ -40,7 +40,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="16dp"
                 android:src="@drawable/ic_baseline_star_hollow"
-                app:tint="@android:color/holo_orange_light" />
+                app:tint="@android:color/darker_gray" />
         </LinearLayout>
 
         <ScrollView

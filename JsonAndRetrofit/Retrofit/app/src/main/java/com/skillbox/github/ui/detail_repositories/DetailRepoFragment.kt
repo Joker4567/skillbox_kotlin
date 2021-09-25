@@ -9,6 +9,7 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.bitmap.CircleCrop
 import com.skillbox.github.App
 import com.skillbox.github.R
+import com.skillbox.github.models.Repositories
 import com.skillbox.github.network.Networking
 import com.skillbox.github.utils.toEditable
 import com.skillbox.github.utils.toast
@@ -22,6 +23,7 @@ import kotlinx.coroutines.launch
 class DetailRepoFragment : Fragment(R.layout.dialog_repo_details) {
 
     private val args: DetailRepoFragmentArgs by navArgs()
+    private var checkStarred = false
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
@@ -44,21 +46,59 @@ class DetailRepoFragment : Fragment(R.layout.dialog_repo_details) {
             .error(R.drawable.ic_baseline_image_not_supported_24)
             .into(ownerAvatarIV)
 
+        App.repositories!!.viewModel.getCheckStarred(
+            item,
+            onComplete = { check ->
+                if(check){
+                    checkStarred = true
+                    starredRepoIV.setBackgroundColor(Color.YELLOW)
+                } else {
+                    checkStarred = false
+                    starredRepoIV.setBackgroundColor(Color.GRAY)
+                }
+            },
+            onError = { mes ->
+                toast("Ошибка: $mes")
+            })
+
         starredRepoIV.setOnClickListener {
-            App.repositories!!.viewModel.getCheckStarred(
-                item,
-                onComplete = { check ->
-                    toast("Звездочка $check")
-                    if(check){
-                        starredRepoIV.setBackgroundColor(Color.YELLOW)
-                    } else {
-                        starredRepoIV.setBackgroundColor(Color.GRAY)
-                    }
-                },
-                onError = { mes ->
-                    toast("Ошибка во время получения статуса звездочки!")
-                })
+            if(checkStarred){
+                deleteStarred(item)
+            } else {
+                putStarred(item)
+            }
         }
     }
 
+    private fun putStarred(item:Repositories){
+        App.repositories!!.viewModel.putStarred(
+            item,
+            onComplete = { check ->
+                if(check){
+                    toast("Звездочка успешно поставлена")
+                    starredRepoIV.setBackgroundColor(Color.YELLOW)
+                    checkStarred = true
+                }
+            },
+            onError = { mes ->
+                toast("Ошибка: $mes")
+            }
+        )
+    }
+
+    private fun deleteStarred(item:Repositories){
+        App.repositories!!.viewModel.deleteStarred(
+            item,
+            onComplete = { check ->
+                if(check) {
+                    toast("Звездочка успешно удалена")
+                    starredRepoIV.setBackgroundColor(Color.GRAY)
+                    checkStarred = false
+                }
+            },
+            onError = { mes ->
+                toast("Ошибка: $mes")
+            }
+        )
+    }
 }

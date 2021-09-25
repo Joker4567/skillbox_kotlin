@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: ru.tinkoff.scrollingpagerindicator:scrollingpagerindicator:1.0.6@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0eca2f75b91d3f8000cac4bc8dd8c257/jetified-scrollingpagerindicator-1.0.6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0eca2f75b91d3f8000cac4bc8dd8c257/jetified-scrollingpagerindicator-1.0.6/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0eca2f75b91d3f8000cac4bc8dd8c257/jetified-scrollingpagerindicator-1.0.6/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ru.tinkoff.scrollingpagerindicator/scrollingpagerindicator/1.0.6/6054113a8fcf85112cf7f049fa7203be0138c6ae/scrollingpagerindicator-1.0.6-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ru.tinkoff.scrollingpagerindicator/scrollingpagerindicator/1.0.6/6d3533ec6c5a6a7faf356d512ac384b9614346e/scrollingpagerindicator-1.0.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

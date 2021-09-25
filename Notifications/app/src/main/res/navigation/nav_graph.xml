@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="ru.skillbox.notifications.fragment.MenuFragment"
+        android:label="MenuFragment" >
+        <action
+            android:id="@+id/action_menuFragment_to_firebaseFragment"
+            app:destination="@id/firebaseFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_syncFragment"
+            app:destination="@id/syncFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/firebaseFragment"
+        android:name="ru.skillbox.notifications.fragment.FirebaseFragment"
+        android:label="FirebaseFragment" />
+    <fragment
+        android:id="@+id/syncFragment"
+        android:name="ru.skillbox.notifications.fragment.SyncFragment"
+        android:label="SyncFragment" />
+</navigation>

@@ -16,7 +16,7 @@ data class ProfileUser (
     @Json(name = "name")
     val name:String = "",
     @Json(name = "email")
-    val email:String = "",
+    val email:String? = "",
     @Json(name = "company")
     val company:String = "",
     @Json(name = "location")

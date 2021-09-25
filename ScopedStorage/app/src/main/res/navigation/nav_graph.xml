@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="ru.skillbox.scopedstorage.presentation.main.MenuFragment"
+        android:label="MenuFragment" >
+        <action
+            android:id="@+id/action_menuFragment_to_imagesFragment"
+            app:destination="@id/imagesFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_docsFragment"
+            app:destination="@id/docsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/imagesFragment"
+        android:name="ru.skillbox.scopedstorage.presentation.images.list.VideosFragment"
+        android:label="ImagesFragment" >
+        <action
+            android:id="@+id/action_imagesFragment_to_addImageDialogFragment"
+            app:destination="@id/addImageDialogFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/docsFragment"
+        android:name="ru.skillbox.scopedstorage.presentation.docs.DocsFragment"
+        android:label="DocsFragment" />
+    <dialog
+        android:id="@+id/addImageDialogFragment"
+        android:name="ru.skillbox.scopedstorage.presentation.images.add.AddVideoDialogFragment"
+        android:label="AddImageDialogFragment" />
+</navigation>

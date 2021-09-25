@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/param"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="2dp"
+        app:cardBackgroundColor="@color/colorTextBackground"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="2dp"
+        app:cardPreventCornerOverlap="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/paramLongitude2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Долгота"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/paramPhoto"
+                app:layout_constraintTop_toBottomOf="@+id/paramFieldLongitude" />
+
+            <EditText
+                android:id="@+id/paramFieldLatitude"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="8dp"
+                android:editable="false"
+                android:ems="10"
+                android:inputType="text|textAutoComplete|textAutoCorrect"
+                android:textColor="@color/colorRegularText"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/paramLongitude2"
+                tools:placeholder="Поле для ввода" />
+
+            <ImageView
+                android:id="@+id/paramPhoto"
+                android:layout_width="@dimen/param_photo_size"
+                android:layout_height="@dimen/param_photo_size"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/ic_camera"
+                android:textAlignment="center"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/paramTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Широта"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/paramPhoto"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/paramFieldLongitude"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="8dp"
+                android:editable="false"
+                android:ems="10"
+                android:inputType="text|textAutoComplete|textAutoCorrect"
+                android:textColor="@color/colorRegularText"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/paramTitle"
+                tools:placeholder="Поле для ввода" />
+
+            <TextView
+                android:id="@+id/paramHint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/colorLightHint"
+                android:translationY="-4dp"
+                android:visibility="gone"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/paramField"
+                tools:text="Подсказка" />
+
+            <ImageView
+                android:id="@+id/ivDelete_obj_map"
+                android:layout_width="@dimen/param_photo_size"
+                android:layout_height="@dimen/param_photo_size"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/paramFieldLatitude"
+                app:srcCompat="@drawable/ic_clear" />
+
+            <TextView
+                android:id="@+id/tvDelete_obj_map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="Удалить"
+                app:layout_constraintBottom_toBottomOf="@+id/ivDelete_obj_map"
+                app:layout_constraintEnd_toStartOf="@+id/ivDelete_obj_map"
+                app:layout_constraintTop_toTopOf="@+id/ivDelete_obj_map" />
+
+            <ImageView
+                android:id="@+id/ivAddLocation_obj_map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                app:layout_constraintStart_toStartOf="@+id/paramFieldLatitude"
+                app:layout_constraintTop_toBottomOf="@+id/paramFieldLatitude"
+                app:srcCompat="@drawable/ic_add_location_geo" />
+
+            <TextView
+                android:id="@+id/tvAddLocation_obj_map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Определить геолокацию"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivAddLocation_obj_map"
+                app:layout_constraintTop_toTopOf="@+id/ivAddLocation_obj_map" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

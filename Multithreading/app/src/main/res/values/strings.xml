@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Multithreading</string>
+    <string name="execute_action">Execute action</string>
+    <string name="bt_race_non_synchronized">non-synchronized</string>
+    <string name="bt_race_synchronized">synchronized</string>
+    <string name="et_race_count_increment">Число инкрементов:</string>
+    <string name="et_race_count_thread">Кол-во потоков:</string>
 </resources>

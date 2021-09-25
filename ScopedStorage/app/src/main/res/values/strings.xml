@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ScopedStorage</string>
+    <string name="menu_image">Videos</string>
+    <string name="menu_doc">Video create</string>
+    <string name="image_list_error">Load list error</string>
+    <string name="image_list_delete_error">Video delete error</string>
+    <string name="image_list_grant_permission">Grant permission</string>
+
+    <string name="image_add_title">Add video</string>
+    <string name="image_add_name_hint">Video name</string>
+    <string name="image_add_url_hint">Video URL</string>
+    <string name="image_add_button">Save</string>
+    <string name="image_add_error">Video save error</string>
+    <string name="docs_read_file">Open video</string>
+    <string name="docs_create_file">Create file</string>
+    <string name="docs_select_directory">Select directory</string>
+    <string name="successDownload">Success download!</string>
+</resources>

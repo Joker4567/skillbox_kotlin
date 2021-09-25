@@ -32,11 +32,7 @@
         android:id="@+id/templateFragment"
         android:name="com.skillbox.lists12.Fragment.TemplateItemFragment"
         android:label="Add pet"
-        tools:layout="@layout/fragment_template_object_add">
-        <action
-            android:id="@+id/action_templateFragment_to_petsFragmentList"
-            app:destination="@id/petsFragmentList"/>
-    </fragment>
+        tools:layout="@layout/fragment_template_object_add"/>
     <fragment
         android:id="@+id/imageFragmentList"
         android:name="com.skillbox.lists12.Fragment.ImageListFragment"

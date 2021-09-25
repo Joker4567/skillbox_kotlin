@@ -48,7 +48,7 @@ class RepositoryListFragment : Fragment(R.layout.fragment_repos_list) {
         viewModel.repoList.observe(viewLifecycleOwner, Observer { repositoriesAdapter.items = it })
         viewModel.isLoading.observe(viewLifecycleOwner, Observer { enableControls(it.not()) })
         viewModel.onError.observe(viewLifecycleOwner, Observer {
-            toast("Во время загрузки случилась ошибка: $it")
+            toast("Ошибка: $it")
         })
     }
 

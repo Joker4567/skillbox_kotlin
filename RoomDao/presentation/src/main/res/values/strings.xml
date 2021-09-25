@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tab_home">Задания</string>
+    <string name="toast_error">Ошибка соединения с сервером</string>
+    <string name="tab_login">Авторизация</string>
+    <string name="tab_profile">Профиль</string>
+    <string name="tab_send">Данные</string>
+    <string name="tab_analytics">Аналитика</string>
+    <string name="retry">Повторить</string>
+    <string name="fragment_detail_work_title">Детальная информация</string>
+    <string name="icon_camera"></string>
+    <string name="unit_minute">мин</string>
+    <string name="unit_second">c</string>
+    <string name="fragment_photo_geo_title">Фотография геометки</string>
+    <string name="fragment_photo_geo_takePhoto">Фото</string>
+
+</resources>

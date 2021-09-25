@@ -21,5 +21,8 @@ class MainFragment: Fragment(R.layout.fragment_main) {
         livelock.setOnClickListener {
             findNavController().navigate(R.id.action_mainFragment_to_livelockFragment)
         }
+        handler.setOnClickListener {
+            findNavController().navigate(R.id.action_mainFragment_to_handlerFragment)
+        }
     }
 }

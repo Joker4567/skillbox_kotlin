@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="toast_error">Ошибка загрузки данных с сервера</string>
+    <string name="date_pattern_dmy">dd MMM yyyy</string>
+    <string name="label_connection_error">Ошибка соединения\n с сетью</string>
+    <string name="label_connection_error_description">Время ожидания соединения с сетью истекло. Пожалуйста, проверьте подключение и повторите попытку</string>
+    <string name="label_server_error">Ошибка соединения\n с сервером</string>
+    <string name="label_server_error_description">Ожидание ответа от сервера превышено, обратитесь к администратору</string>
+    <string name="label_common_error">Ошибка</string>
+    <string name="label_common_error_description">Что-то пошло не так. Пожалуйста, попробуйте еще раз</string>
+    <string name="label_wait_loading">Пожалуйста, подождите идет, загрузка данных…</string>
+    <string name="content_connection_error">Ошибка соединения</string>
+    <string name="btn_ok">ОК</string>
+    <string name="btn_repeat">Повторить</string>
+    <string name="app_name">Изыскатель</string>
+</resources>

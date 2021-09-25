@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/default_margin_6"
+    android:foreground="?attr/selectableItemBackgroundBorderless"
+    app:cardCornerRadius="@dimen/card_corner_radius"
+    app:cardElevation="@dimen/card_elevation_2">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@color/colorTextSemiTransparentBackground"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvZakaz"
+            style="@style/RegularTextBody"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:padding="@dimen/default_margin_6"
+            android:textAlignment="viewStart"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Заказ №1" />
+
+        <TextView
+            android:id="@+id/tvObj"
+            style="@style/RegularTextBody"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:padding="@dimen/default_margin_6"
+            android:singleLine="true"
+            android:textAlignment="viewStart"
+            app:layout_constraintBottom_toBottomOf="@+id/tvZakaz"
+            app:layout_constraintStart_toEndOf="@+id/tvZakaz"
+            app:layout_constraintTop_toTopOf="@+id/tvZakaz"
+            tools:text="Куст палазненского месторождения" />
+
+        <TextView
+            android:id="@+id/tvComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tvZakaz"
+            app:layout_constraintTop_toBottomOf="@+id/tvZakaz"
+            tools:text="Комментарий: объект ...." />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

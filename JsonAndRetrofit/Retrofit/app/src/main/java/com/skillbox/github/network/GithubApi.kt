@@ -14,8 +14,27 @@ interface GithubApi {
     @GET("repositories")
     fun getRepositories() : Call<List<Repositories>>
 
+    @Headers("Accept: application/vnd.github.v3+json")
     @GET("user/starred/{owner}/{repo}")
     fun checkStarred(
+        @Path("owner")
+        owner_path:String,
+        @Path("repo")
+        repo_path:String
+    ) : Call<Boolean>
+
+    @Headers("Accept: application/vnd.github.v3+json")
+    @PUT("user/starred/{owner}/{repo}")
+    fun putStarred(
+        @Path("owner")
+        owner_path:String,
+        @Path("repo")
+        repo_path:String
+    ) : Call<Boolean>
+
+    @Headers("Accept: application/vnd.github.v3+json")
+    @DELETE("user/starred/{owner}/{repo}")
+    fun deleteStarred(
         @Path("owner")
         owner_path:String,
         @Path("repo")

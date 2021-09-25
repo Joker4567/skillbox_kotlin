@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/nameFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="file_video.mp4"
+        android:hint="@string/fragment_work_manager_filename" />
+
+    <EditText
+        android:id="@+id/downloadUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="https://thumbs.gfycat.com/HonestIllfatedBobcat-mobile.mp4"
+        android:hint="@string/fragment_work_manager_url" />
+
+    <Button
+        android:id="@+id/startDownload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_work_manager_bt_download" />
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/cancelDownload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_work_manager_bt_cancel" />
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/downloadProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvWait"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        android:text="@string/fragment_work_manager_wait" />
+
+</LinearLayout>

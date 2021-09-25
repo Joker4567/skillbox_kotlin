@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "339791691270",
+    "project_id": "mobigames-7ebcc",
+    "storage_bucket": "mobigames-7ebcc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:339791691270:android:4d0285e4fe6af30e284d87",
+        "android_client_info": {
+          "package_name": "pro.enaza.mobigames"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "339791691270-jhc72jf2ag80ettpemrbdj6k7ogl7vuo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDb55xgVFwI27N8OoTwdwPl_VaPEChY2Pg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "339791691270-jhc72jf2ag80ettpemrbdj6k7ogl7vuo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

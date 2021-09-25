@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:textColor">@color/colorRegularText</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:backgroundTint">@color/colorError</item>
+    </style>
+
+
+    <style name="Text" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/colorRegularText</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Text.Red">
+        <item name="android:textColor">@color/colorPrimaryLight</item>
+    </style>
+
+    <style name="Text.Hint">
+        <item name="android:textColor">@color/colorLightHint</item>
+    </style>
+
+    <style name="Text.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.White">
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="Text.Hint.16">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Text.Bold.20">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="Text.Bold.White">
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="Text.Bold.Red">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="Text.Bold.White.16">
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="Text.Bold.Red.16">
+        <item name="android:textSize">16dp</item>
+    </style>
+</resources>

@@ -43,8 +43,52 @@ class RepositoryListViewModel : ViewModel() {
         onError: (String) -> Unit
     ){
         val owner_path = item.owner.owner_path.replace("https://api.github.com/users/","")
-        val repo_path = item.owner.repos_path.replace("https://api.github.com/users/","")
+        val repo_path = item.header
         repository.getCheckStarred(
+            owner_path = owner_path,
+            repo_path = repo_path,
+            onComplete = { check ->
+                isLoadingLiveData.postValue(false)
+                onComplete(check)
+            },
+            onError = { mes ->
+                isLoadingLiveData.postValue(false)
+                onError(mes.message.orEmpty())
+                onErrorLiveData.postValue(mes.message)
+            }
+        )
+    }
+
+    fun putStarred(
+        item: Repositories,
+        onComplete: (Boolean) -> Unit,
+        onError: (String) -> Unit
+    ){
+        val owner_path = item.owner.owner_path.replace("https://api.github.com/users/","")
+        val repo_path = item.header
+        repository.putStarred(
+            owner_path = owner_path,
+            repo_path = repo_path,
+            onComplete = { check ->
+                isLoadingLiveData.postValue(false)
+                onComplete(check)
+            },
+            onError = { mes ->
+                isLoadingLiveData.postValue(false)
+                onError(mes.message.orEmpty())
+                onErrorLiveData.postValue(mes.message)
+            }
+        )
+    }
+
+    fun deleteStarred(
+        item: Repositories,
+        onComplete: (Boolean) -> Unit,
+        onError: (String) -> Unit
+    ){
+        val owner_path = item.owner.owner_path.replace("https://api.github.com/users/","")
+        val repo_path = item.header
+        repository.deleteStarred(
             owner_path = owner_path,
             repo_path = repo_path,
             onComplete = { check ->

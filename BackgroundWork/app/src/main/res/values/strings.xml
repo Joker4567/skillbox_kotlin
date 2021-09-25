@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Services</string>
+    <string name="fragment_work_manager_filename">File name</string>
+    <string name="fragment_work_manager_url">Url to download</string>
+    <string name="fragment_work_manager_bt_download">Download</string>
+    <string name="fragment_work_manager_bt_cancel">Cancel download</string>
+    <string name="fragment_work_manager_wait">Wait download</string>
+    <string name="fragment_work_manager_retry">Retry</string>
+</resources>

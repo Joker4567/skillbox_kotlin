@@ -9,11 +9,10 @@ import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.create
-import java.io.IOException
 
 object Network {
 
-    const val MOVIE_API_KEY = "YOUR API KEY"
+    const val MOVIE_API_KEY = "6e8c7f7d"
 
     private val client = OkHttpClient.Builder()
         .addInterceptor(HttpLoggingInterceptor().apply {
@@ -27,16 +26,7 @@ object Network {
         .addConverterFactory(GsonConverterFactory.create())
         .build()
 
-    fun getMovieById(movieId: String): Movie? {
-        return try {
-            api().getMovieById(movieId, MOVIE_API_KEY).execute().body()
-        } catch (e: IOException) {
-            // Проблемы с интернет соединением
-            null
-        }
-    }
-
-    private fun api(): MovieApi {
+    fun api(): MovieApi {
         return retrofit.create()
     }
 }

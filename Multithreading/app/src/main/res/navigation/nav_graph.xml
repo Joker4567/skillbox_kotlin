@@ -22,6 +22,9 @@
         <action
             android:id="@+id/action_mainFragment_to_threadingFragment"
             app:destination="@id/threadingFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_handlerFragment"
+            app:destination="@id/handlerFragment" />
     </fragment>
     <fragment
         android:id="@+id/deadlockFragment"
@@ -40,4 +43,8 @@
         tools:layout="@layout/fragment_threading"
         android:name="com.skillbox.multithreading.threading.ThreadingFragment"
         android:label="ThreadingFragment" />
+    <fragment
+        android:id="@+id/handlerFragment"
+        android:name="com.skillbox.multithreading.HandlerFragment"
+        android:label="HandlerFragment" />
 </navigation>
