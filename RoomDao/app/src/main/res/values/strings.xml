@@ -1,4 +1,3 @@
 <resources>
-    <string name="app_name">Prospector</string>
-    <string name="toast_error">Шибка загрузки данных с сервера</string>
+    <string name="app_name">RoomSkillBox</string>
 </resources>

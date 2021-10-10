@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="3dp"
+    android:padding="5dp"
+    android:background="@drawable/bg_item_background">
+
+    <TextView
+        android:id="@+id/menu_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="2dp"
+        tools:text="Питательный набор" />
+
+    <TextView
+        android:id="@+id/menu_item_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/darker_gray"
+        android:layout_gravity="center"
+        tools:text="здоровые калории для мышц" />
+
+</LinearLayout>

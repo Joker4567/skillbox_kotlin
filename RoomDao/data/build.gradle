@@ -56,24 +56,11 @@ dependencies {
     kapt "androidx.room:room-compiler:2.2.5"
     implementation "androidx.room:room-ktx:2.2.5"
 
+    implementation 'com.google.code.gson:gson:2.8.7'
+
     //SharedPreferences
     implementation "androidx.security:security-crypto:1.1.0-alpha02"
     implementation "androidx.preference:preference-ktx:1.1.1"
-
-    //Retrofit
-    implementation "com.squareup.retrofit2:retrofit:2.7.2"
-    implementation "com.github.akarnokd:rxjava3-retrofit-adapter:3.0.0"
-    implementation "com.squareup.retrofit2:converter-moshi:2.9.0"
-    implementation "com.squareup.retrofit2:converter-gson:2.6.2"
-
-    //Okhttp
-    implementation "com.squareup.okhttp3:okhttp:4.9.0"
-    implementation "com.squareup.okhttp3:logging-interceptor:4.8.0"
-
-    //RxJava2
-    implementation "io.reactivex.rxjava3:rxjava:3.0.2"
-    implementation "io.reactivex.rxjava3:rxandroid:3.0.0"
-    implementation "io.reactivex.rxjava3:rxkotlin:3.0.0"
 
     //Moshi
     def moshiVersion = '1.9.3'
@@ -91,13 +78,4 @@ dependencies {
 
     //EventBus
     implementation "org.greenrobot:eventbus:3.1.1"
-
-    def flipperVersion = '0.43.0'
-
-    //Flipper
-    debugImplementation "com.facebook.flipper:flipper:$flipperVersion"
-    releaseImplementation "com.facebook.flipper:flipper-noop:$flipperVersion"
-    debugImplementation "com.facebook.flipper:flipper-network-plugin:$flipperVersion"
-    debugImplementation "com.facebook.soloader:soloader:0.9.0"
-    releaseImplementation "com.github.theGlenn:flipper-android-no-op:0.3.0"
 }

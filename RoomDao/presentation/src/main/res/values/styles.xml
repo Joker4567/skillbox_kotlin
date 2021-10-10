@@ -7,65 +7,11 @@
         <item name="fontFamily">@font/roboto</item>
     </style>
 
-    <style name="SplashTheme" parent="Theme.MaterialComponents">
-        <item name="android:statusBarColor">@color/colorAppBackground</item>
-        <item name="android:windowBackground">@drawable/bg_splash</item>
-    </style>
-
     <style name="Toolbar" parent="Widget.MaterialComponents.Toolbar">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">?attr/actionBarSize</item>
         <item name="android:background">@color/colorToolbarBackground</item>
         <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
-    </style>
-
-    <style name="photoParamIcon">
-        <item name="android:fontFamily">@font/fa_solid</item>
-        <item name="android:textSize">21sp</item>
-        <item name="android:textColor">@color/colorPaleAccent</item>
-    </style>
-
-    <style name="TextAppearance.Design.CollapsingToolbar.Expanded.Shadow">
-        <item name="android:shadowDy">0</item>
-        <item name="android:shadowDx">0</item>
-        <item name="android:shadowRadius">8</item>
-        <item name="android:shadowColor">@android:color/black</item>
-    </style>
-
-    <style name="RegularTextTitle" parent="Widget.MaterialComponents.TextView">
-        <item name="android:textColor">@color/colorRegularText</item>
-        <item name="android:textSize">@dimen/font_18</item>
-    </style>
-
-    <style name="RegularTextBody" parent="Widget.MaterialComponents.TextView">
-        <item name="android:textColor">@color/colorRegularText</item>
-        <item name="android:textSize">@dimen/font_16</item>
-    </style>
-
-    <style name="RegularTextBody.Message">
-        <item name="android:textColor">@color/colorPaleText</item>
-    </style>
-
-    <style name="RegularTextBody.Message.LabelNotFound">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_gravity">center</item>
-        <item name="android:drawablePadding">@dimen/default_margin_10</item>
-    </style>
-
-    <style name="RegularTextBody.Message.InfoRecipeTitle">
-        <item name="android:padding">@dimen/default_margin_10</item>
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_centerHorizontal">true</item>
-        <item name="android:textAllCaps">true</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:gravity">center</item>
-    </style>
-
-    <style name="AccentTextTitle" parent="Widget.MaterialComponents.TextView">
-        <item name="android:textColor">@color/colorAccent</item>
-        <item name="android:textSize">@dimen/font_22</item>
     </style>
 
     <style name="Button" parent="Widget.MaterialComponents.Button">
@@ -77,50 +23,6 @@
         <item name="android:backgroundTint">@color/colorPrimary</item>
         <item name="android:background">@color/colorPrimary</item>
         <item name="android:textSize">@dimen/font_16</item>
-    </style>
-
-    <style name="CardView.Custom">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:minHeight">@dimen/card_min_height</item>
-        <item name="cardBackgroundColor">@color/colorCardViewBackground</item>
-        <item name="cardCornerRadius">@dimen/card_corner_radius</item>
-        <item name="cardElevation">@dimen/card_elevation_5</item>
-    </style>
-
-    <style name="ScrollingPagerIndicator.Custom">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_margin">@dimen/default_margin_10</item>
-        <item name="spi_dotColor">@color/colorPaleAccent</item>
-        <item name="spi_dotSelectedColor">@color/colorAccent</item>
-        <item name="spi_dotSelectedSize">@dimen/dot_selected_size</item>
-        <item name="spi_dotSpacing">@dimen/dot_spacing</item>
-    </style>
-
-    <style name="ImageViewIcon">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_gravity">end</item>
-        <item name="android:layout_margin">@dimen/default_margin_10</item>
-        <item name="android:foreground">?selectableItemBackgroundBorderless</item>
-    </style>
-
-    <style name="MaterialAlertDialog.Theme" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
-        <item name="background">@color/colorAppBackground</item>
-        <item name="dialogCornerRadius">10dp</item>
-        <item name="buttonBarNegativeButtonStyle">@style/AlertDialog.ButtonNegativeColor</item>
-        <item name="buttonBarPositiveButtonStyle">@style/AlertDialog.ButtonPositiveColor</item>
-    </style>
-
-    <style name="AlertDialog.ButtonPositiveColor" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
-        <item name="android:textColor">@color/colorPrimary</item>
-        <item name="android:textStyle">bold</item>
-    </style>
-
-    <style name="AlertDialog.ButtonNegativeColor" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
-        <item name="android:textColor">@color/colorPaleText</item>
-        <item name="android:textStyle">bold</item>
     </style>
 
 </resources>

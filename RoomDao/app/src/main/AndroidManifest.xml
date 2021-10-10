@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:dist="http://schemas.android.com/apk/distribution"
-    package="com.prognozrnm.prospector">
+    package="com.skillbox.room">
 
     <dist:module dist:instant="true" />
 
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <uses-permission android:name="android.permission.CAMERA"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-
     <application
-        android:name=".App"
+        android:name="com.skillbox.room.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -21,17 +14,14 @@
         android:usesCleartextTraffic="true"
         android:supportsRtl="true">
         <activity
-            android:name="com.prognozrnm.presentation.splash.SplashActivity"
-            android:theme="@style/SplashTheme">
+            android:name="com.skillbox.presentation.main.MainActivity"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.prognozrnm.presentation.MainActivity"
-            android:theme="@style/AppTheme"
-            android:windowSoftInputMode="adjustPan" />
     </application>
 
 </manifest>

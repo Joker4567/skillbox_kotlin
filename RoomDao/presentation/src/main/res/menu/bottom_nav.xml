@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/home"
-        android:contentDescription="@string/tab_home"
-        android:icon="@drawable/ic_home"
-        android:title="@string/tab_home" />
+        android:id="@+id/lenta"
+        android:contentDescription="@string/tab_lenta"
+        android:icon="@drawable/ic_tape"
+        android:title="@string/tab_lenta" />
 
     <item
-        android:id="@+id/send"
-        android:contentDescription="@string/tab_send"
-        android:icon="@drawable/ic_send"
-        android:title="@string/tab_send" />
+        android:id="@+id/order"
+        android:contentDescription="@string/tab_order"
+        android:icon="@drawable/ic_order"
+        android:title="@string/tab_order" />
 
     <item
-        android:id="@+id/profile"
-        android:contentDescription="@string/tab_profile"
-        android:icon="@drawable/ic_account"
-        android:title="@string/tab_profile" />
+        android:id="@+id/rating"
+        android:contentDescription="@string/tab_rating"
+        android:icon="@drawable/ic_star"
+        android:title="@string/tab_rating" />
 </menu>

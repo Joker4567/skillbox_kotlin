@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/lenta"
+        app:startDestination="@id/lentaFragment"
+        tools:ignore="UnusedNavigation">
+
+    <fragment
+            android:id="@+id/lentaFragment"
+            android:name="com.skillbox.presentation.lenta.LentaFragment"
+            android:label="Lenta"
+            tools:layout="@layout/fragment_lenta" >
+        <action
+            android:id="@+id/action_lentaFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.skillbox.presentation.menu.MenuFragment"
+        android:label="MenuFragment" >
+        <argument
+            android:name="restaurantId"
+            app:argType="integer" />
+    </fragment>
+
+
+</navigation>

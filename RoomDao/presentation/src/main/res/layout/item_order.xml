@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    android:padding="5dp"
+    android:background="@drawable/bg_item_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/order_item_restaurant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_margin="5dp"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:paddingStart="5dp"
+        tools:text="Ресторан 1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/order_item_sale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:textSize="15sp"
+            android:paddingStart="5dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="@android:color/darker_gray"
+            tools:text="Скидка: 10%" />
+
+        <TextView
+            android:id="@+id/order_item_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:textColor="@android:color/black"
+            android:paddingEnd="5dp"
+            tools:text="12.09.2021" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:textColor="@android:color/black"
+            android:paddingStart="5dp"
+            android:textAlignment="textStart"
+            android:text="Итого оплачено:" />
+
+        <TextView
+            android:id="@+id/order_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:textColor="@android:color/black"
+            android:paddingEnd="5dp"
+            tools:text="500 руб." />
+
+    </LinearLayout>
+
+</LinearLayout>

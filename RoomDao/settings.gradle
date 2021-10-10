@@ -3,4 +3,4 @@ include ':presentation'
 include ':domain'
 include ':data'
 include ':app'
-rootProject.name = "Prospector"
+rootProject.name = "SkillboxRoom"

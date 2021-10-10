@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Prospector.iml" filepath="$PROJECT_DIR$/.idea/modules/Prospector.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Prospector.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Prospector.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data/Prospector.data.iml" filepath="$PROJECT_DIR$/.idea/modules/data/Prospector.data.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/domain/Prospector.domain.iml" filepath="$PROJECT_DIR$/.idea/modules/domain/Prospector.domain.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/presentation/Prospector.presentation.iml" filepath="$PROJECT_DIR$/.idea/modules/presentation/Prospector.presentation.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/utils/Prospector.utils.iml" filepath="$PROJECT_DIR$/.idea/modules/utils/Prospector.utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SkillboxRoom.iml" filepath="$PROJECT_DIR$/.idea/modules/SkillboxRoom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/SkillboxRoom.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/SkillboxRoom.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data/SkillboxRoom.data.iml" filepath="$PROJECT_DIR$/.idea/modules/data/SkillboxRoom.data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/domain/SkillboxRoom.domain.iml" filepath="$PROJECT_DIR$/.idea/modules/domain/SkillboxRoom.domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/presentation/SkillboxRoom.presentation.iml" filepath="$PROJECT_DIR$/.idea/modules/presentation/SkillboxRoom.presentation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/utils/SkillboxRoom.utils.iml" filepath="$PROJECT_DIR$/.idea/modules/utils/SkillboxRoom.utils.iml" />
     </modules>
   </component>
 </project>
