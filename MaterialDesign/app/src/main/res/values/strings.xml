@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MaterialDesign</string>
+    <string name="title_home">CheckBox</string>
+    <string name="title_dashboard">Catalog</string>
+    <string name="title_notifications">None</string>
+    <string name="checkbox_material_sample_text">CheckBox Material</string>
+</resources>

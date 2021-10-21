@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#c2185b</color>
+    <color name="primary_light">#fa5788</color>
+    <color name="primary_dark">#8c0032</color>
+    <color name="secondary">#c5e1a5</color>
+    <color name="secondary_dark">#94af76</color>
+    <color name="secondary_light">#f8ffd7</color>
+    <color name="text_primary">#ffffff</color>
+    <color name="text_silent">#000000</color>
+    <color name="colorBottomBarBackground">#bb4d00</color>
+    <color name="colorBottomBarText">#f3e5f5</color>
+    <color name="colorDlc">#280680</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="snackColor">#ff8a80</color>
+    <color name="colorOnSurface">#c85a54</color>
+    <color name="colorBackgroundBlack50">#63000000</color>
+</resources>

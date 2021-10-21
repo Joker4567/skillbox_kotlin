@@ -1,0 +1,66 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MaterialDesign" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_light</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryVariant">@color/secondary_light</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/primary_dark</item>
+        <!-- Customize your theme here. -->
+        <item name="textAppearanceButton">@style/MaterialButton</item>
+        <item name="bottomNavigationStyle">@style/bottomNavStyle</item>
+        <item name="snackbarStyle">@style/Widget.App.Snackbar</item>
+        <item name="snackbarButtonStyle">@style/Widget.App.SnackbarButton</item>
+    </style>
+
+    <style name="styleCardMaterial" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="textAppearanceHeadline6">@style/textHeadlines6</item>
+        <item name="textAppearanceBody2">@style/textBody2</item>
+        <item name="cardElevation">10dp</item>
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">@dimen/dp20</item>
+        <item name="cornerSizeTopLeft">@dimen/dp20</item>
+        <item name="cornerSizeBottomRight">@dimen/dp20</item>
+        <item name="cornerSizeBottomLeft">@dimen/dp20</item>
+    </style>
+
+    <style name="textHeadlines6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="textBody2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="MaterialButton" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="bottomNavStyle" parent="@style/Widget.MaterialComponents.BottomNavigationView.Colored">
+        <item name="android:background">@color/colorBottomBarBackground</item>
+        <item name="itemIconTint">@drawable/bottom_nav_selected_icon</item>
+        <item name="itemRippleColor">@color/mtrl_bottom_nav_colored_ripple_color</item>
+        <item name="itemTextColor">@color/colorBottomBarText</item>
+        <item name="android:state_checked">@drawable/change_icon</item>
+    </style>
+
+    <style name="Widget.App.Snackbar" parent="Widget.MaterialComponents.Snackbar">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Snackbar</item>
+        <item name="actionTextColorAlpha">0.8</item>
+    </style>
+
+    <style name="Widget.App.SnackbarButton" parent="Widget.MaterialComponents.Button.TextButton.Snackbar">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="ThemeOverlay.App.Snackbar" parent="">
+        <item name="colorPrimary">@color/primary_light</item>
+        <item name="colorOnSurface">@color/colorOnSurface</item>
+    </style>
+</resources>

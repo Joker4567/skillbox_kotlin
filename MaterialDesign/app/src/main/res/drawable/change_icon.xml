@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--  это при нажатом состоянии  -->
+    <item
+        app:labelVisibilityMode="labeled"
+        android:state_pressed="true"/>
+    <!--  это значение по умолчанию + должно быть последним -->
+    <item app:labelVisibilityMode="unlabeled"/>
+</selector>
